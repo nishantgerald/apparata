@@ -11,6 +11,11 @@ Apparata is a Python script that can be used to generate realistic data for a va
 * Emails
 * Latitudes and longitudes
 
+## How to Install Apparata
+```bash
+pip install apparata
+```
+
 ## How to Use Apparata
 
 To use Apparata, simply import the script into your Python program and call the desired function. For example, to generate a random number with 10 digits, you would use the following code:
@@ -20,4 +25,3 @@ import apparata
 
 number = apparata.generate_numbers(10)
 ```
-
