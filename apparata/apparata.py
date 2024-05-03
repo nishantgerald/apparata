@@ -43,7 +43,6 @@ def generate_float(ndigits: int) -> float:
     integer = random.randint(10**(ndigits-1), 10**ndigits-1)
     fraction = random.uniform(0, 1)
     floating = round(integer + fraction, 2)
-    print(floating)
 
     # Return the random number
     return floating
