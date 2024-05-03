@@ -1,1 +1,5 @@
 *pycache*
+build/
+dist/
+*apparata.egg*
+.pypi_key
