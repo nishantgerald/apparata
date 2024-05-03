@@ -8,4 +8,6 @@ setup(
     author_email='nishantgerald@gmail.com',
     packages=['apparata'],
     install_requires=['faker', 'pandas'],
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
 )
