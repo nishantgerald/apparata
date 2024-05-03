@@ -19,10 +19,10 @@ pip install apparata
 
 ## How to Use Apparata
 
-To use Apparata, simply import the script into your Python program and call the desired function. For example, to generate a random number with 10 digits, you would use the following code:
+To use Apparata, simply import the script into your Python program and call the desired function. For example, to generate a random integer with 7 digits, you would use the following code:
 
 ```python
 import apparata
 
-number = apparata.generate_numbers(10)
+number = apparata.generate_integer(7)
 ```
