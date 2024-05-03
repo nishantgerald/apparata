@@ -3,7 +3,7 @@ import random
 from faker import Faker
 fake = Faker()
 
-def generate_integers(ndigits: int) -> int:
+def generate_integer(ndigits: int) -> int:
     """
     Function that generates a random integers given the number of digits
 
