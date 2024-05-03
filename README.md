@@ -2,7 +2,8 @@
 
 Apparata is a Python script that can be used to generate realistic data for a variety of purposes, such as testing, prototyping, and machine learning. It is primarily a wrapper for some functions from the [faker](https://faker.readthedocs.io/en/master/) library, which provides a wide range of data generation options. However, this script has additional capabilities that Faker does not provide. Apparata can generate a wide range of data types, including:
 
-* Numbers
+* Integers
+* Floats
 * First names
 * Last names
 * Addresses

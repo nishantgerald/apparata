@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import random
-import pandas as pd
 from faker import Faker
 fake = Faker()
 
-def generate_numbers(ndigits: int) -> int:
+def generate_integers(ndigits: int) -> int:
     """
-    Function that generates a random number given the number of digits
+    Function that generates a random integers given the number of digits
 
     Args:
         ndigits (int): The number of digits in the random number
@@ -20,10 +19,34 @@ def generate_numbers(ndigits: int) -> int:
         raise ValueError("The number of digits must be greater than 0")
 
     # Generate a random number with the specified number of digits
-    number = random.randint(10**(ndigits-1), 10**ndigits-1)
+    integer = random.randint(10**(ndigits-1), 10**ndigits-1)
 
     # Return the random number
-    return number
+    return integer
+
+def generate_float(ndigits: int) -> float:
+    """
+    Function that generates a random floating point number given the number of digits
+
+    Args:
+        ndigits (int): The number of digits in the random number
+
+    Returns:
+        float: A random floating point number with the specified number of digits and two decimal places
+    """
+
+    # Check if the number of digits is valid
+    if ndigits <= 0:
+        raise ValueError("The number of digits must be greater than 0")
+
+    # Generate a random number with the specified number of digits
+    integer = random.randint(10**(ndigits-1), 10**ndigits-1)
+    fraction = random.uniform(0, 1)
+    floating = round(integer + fraction, 2)
+    print(floating)
+
+    # Return the random number
+    return floating
 
 def generate_first_name() -> str:
     """
